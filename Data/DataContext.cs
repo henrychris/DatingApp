@@ -12,6 +12,7 @@ namespace API.Data
 
         public DataContext()
         {
+
         }
 
         // Configures the database provider
@@ -19,7 +20,7 @@ namespace API.Data
         {
             if (!options.IsConfigured)
             {
-                options.UseSqlite("Data Source=datingapp.db");
+                options.UseSqlite("DefaultConnection");
             }
         }
 
